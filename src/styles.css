@@ -1,0 +1,25 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@keyframes hover_flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sword {
+  background: white;
+  z-index: 2;
+}
+.sword:hover {
+  background: aquamarine;
+  animation: hover_flash 0.1s linear 2;
+}
